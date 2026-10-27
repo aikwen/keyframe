@@ -12,7 +12,7 @@ import (
 var (
 	user32 = syscall.NewLazyDLL("user32.dll")
 	// GetPhysicalCursorPos and GetCursorPos
-	procGetCursorPos = user32.NewProc("GetPhysicalCursorPos")
+	procGetCursorPos = user32.NewProc("GetCursorPos")
 )
 
 type point struct {
